@@ -1,4 +1,4 @@
-# Without GUI
+'''# Without GUI
 
 import cv2
 import face_recognition
@@ -42,10 +42,11 @@ while True:
         break
 
 cap.release()
-cv2.destroyAllWindows()
+cv2.destroyAllWindows()'''
 
 
-'''import tkinter as tk
+# With GUI
+import tkinter as tk
 from tkinter import messagebox
 import cv2
 import face_recognition
@@ -124,4 +125,4 @@ tk.Button(root, text="🔁 Re-Encode Faces", command=re_encode_faces).pack(pady=
 tk.Button(root, text="✅ Start Attendance", command=start_attendance).pack(pady=10)
 tk.Button(root, text="❌ Exit", command=root.destroy).pack(pady=10)
 
-root.mainloop()'''
+root.mainloop()

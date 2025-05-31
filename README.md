@@ -29,11 +29,17 @@ pip install numpy
 ## Usage
 1. Add clear face images to `face_data/` folder (name the image with person's name)
 2. Run `encode_faces.py` to generate encodings
-3. Run `main.py` to start the webcam and recognize faces
 4. Attendance will be saved in `Attendance/attendance.csv`
 
 ## Example
 ![screenshot](screenshot.png)  # Optional
 
-## Run Program
-python main.py
+## Run Program/Important Command:- 
+1. If you want to run a simple script — python recognize_faces.py
+2. If you want a user-friendly interface with GUI —  python main.py  
+3. If save file and images changes - python encode_faces.py
+4. Check Registered Names:-  python check_names.py
+
+## some other command-
+1. notepad recognize_faces.py
+2. python .\show_names.py
