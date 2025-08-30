@@ -120,9 +120,9 @@ tk.Label(root, text="Enter Name:").pack(pady=5)
 entry_name = tk.Entry(root)
 entry_name.pack(pady=5)
 
-tk.Button(root, text="📸 Register New Face", command=register_face).pack(pady=10)
-tk.Button(root, text="🔁 Re-Encode Faces", command=re_encode_faces).pack(pady=10)
-tk.Button(root, text="✅ Start Attendance", command=start_attendance).pack(pady=10)
-tk.Button(root, text="❌ Exit", command=root.destroy).pack(pady=10)
+tk.Button(root, text="Register New Face", command=register_face).pack(pady=10)
+tk.Button(root, text="Re-Encode Faces", command=re_encode_faces).pack(pady=10)
+tk.Button(root, text="Start Attendance", command=start_attendance).pack(pady=10)
+tk.Button(root, text="Exit", command=root.destroy).pack(pady=10)
 
 root.mainloop()

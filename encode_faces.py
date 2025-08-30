@@ -36,7 +36,7 @@ import pickle
 known_encodings = []
 known_names = []
 
-# ✅ सही folder का नाम
+# correct folder name
 image_dir = "face_data"
 
 for filename in os.listdir(image_dir):
@@ -50,7 +50,7 @@ for filename in os.listdir(image_dir):
         boxes = face_recognition.face_locations(rgb, model="hog")
         encodings = face_recognition.face_encodings(rgb, boxes)
 
-        name = os.path.splitext(filename)[0]  # filename से नाम लेना, e.g., Ranjan.jpg -> Ranjan
+        name = os.path.splitext(filename)[0]  # getting name from filename, e.g., Ranjan.jpg -> Ranjan
 
         for encoding in encodings:
             known_encodings.append(encoding)
