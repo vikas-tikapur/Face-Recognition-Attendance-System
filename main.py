@@ -132,11 +132,17 @@ cv2.destroyAllWindows()'''
 # -------------------- GUI toolkit --------------------
 import tkinter as tk   # Standard Python GUI package
 from tkinter import messagebox, ttk  # Pop-up dialogs & themed widgets
+
+# -------------------- computer - vision --------------------
 import cv2  # OpenCV for image processing
 import face_recognition # Library for face detection & recognition
+
+#--------------------Persistence helpers---------------------
 import os # For file and folder operations
 import pickle # For saving/loading Python objects in binary format
 import numpy as np  # Numerical operations
+
+#-------------------- Database --------------------
 import sqlite3  # SQLite database for attendance records
 from datetime import datetime  # For timestamping attendance
 
