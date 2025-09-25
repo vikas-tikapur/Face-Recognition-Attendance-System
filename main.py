@@ -128,19 +128,21 @@ cv2.destroyAllWindows()'''
 # root.mainloop()
 
 
-import tkinter as tk
-from tkinter import messagebox, ttk
-import cv2
-import face_recognition
-import os
-import pickle
-import numpy as np
-import sqlite3
-from datetime import datetime
+
+# -------------------- GUI toolkit --------------------
+import tkinter as tk   # Standard Python GUI package
+from tkinter import messagebox, ttk  # Pop-up dialogs & themed widgets
+import cv2  # OpenCV for image processing
+import face_recognition # Library for face detection & recognition
+import os # For file and folder operations
+import pickle # For saving/loading Python objects in binary format
+import numpy as np  # Numerical operations
+import sqlite3  # SQLite database for attendance records
+from datetime import datetime  # For timestamping attendance
 
 # ---------------- Database Setup ----------------
 def init_db():
-    conn = sqlite3.connect("attendance.db")
+    conn = sqlite3.connect("attendance.db")  # Connect to SQLite database (or create it)
     cur = conn.cursor()
     cur.execute("""
         CREATE TABLE IF NOT EXISTS attendance (
